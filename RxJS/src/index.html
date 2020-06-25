@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>RxJS</title>
+  <style>
+    .h1 {
+      font-size: 35px;
+    }
+
+    .mt {
+      margin-top: 50px !important;
+    }
+
+    .content {
+      width: 100%;
+      border: 3px solid #222;
+      min-height: 150px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .inherit {
+      width: 100%;
+      height: 100%;
+      background-color: red;
+    }
+
+    #subjects:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body style="padding-top: 3rem;">
+
+  <div class="container">
+
+    <div class="h1 mt">1_problem</div>
+    <div id="1_problem">
+      <button class="btn" id="interval">Show with JS</button>
+      <button class="btn" id="rxjs">Show with RxJS</button>
+      <div class="result"></div>
+      <hr>
+    </div>
+
+    <div class="h1 mt">2_create_stream</div>
+    <div class="content">
+      <div id="2_create_stream">
+        <canvas width="500" height="200" style="border: 5px solid #eee" id="canvas"></canvas>
+        <button class="btn" id="clear">Clear</button>
+      </div>
+    </div>
+
+    <div class="h1 mt">3_subjects</div>
+    <div id="subjects" class="content"></div>
+
+  </div>
+
+
+</body>
+
+</html>
